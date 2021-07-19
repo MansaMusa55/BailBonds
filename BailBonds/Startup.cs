@@ -31,8 +31,7 @@ namespace BailBonds
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(Connection.GetConnectionString(Configuration)));
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddIdentity<BondsUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
