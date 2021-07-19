@@ -18,10 +18,4 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.7" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\AdminLTE-3.1.0\plugins\bootstrap\js\" />
-    <Folder Include="wwwroot\AdminLTE-3.1.0\plugins\jquery\" />
-    <Folder Include="wwwroot\AdminLTE-3.1.0\plugins\overlayScrollbars\css\" />
-  </ItemGroup>
-
 </Project>
